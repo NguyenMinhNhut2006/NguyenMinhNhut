@@ -1,0 +1,32 @@
+﻿.container{
+	background: #2A7B9B;
+	background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 48%, rgba(237, 221, 83, 1) 100%);
+	text-align: center;
+	margin: 350px;
+	padding : 5px;
+	border-radius:10px;
+}
+
+#frmlogin{
+	margin:100px;
+	background: #2A7B9B;
+background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(137, 118, 166, 1) 48%, rgba(237, 221, 83, 1) 100%);
+	border-radius:10px;
+}
+
+.tieude{
+	color:#002200;
+}
+body{
+	background-image: url("../assets/images/nen5.jpg");
+}
+table.bang{
+	margin:auto;
+	
+	border:none;
+}
+button{
+	cursor:pointer;
+	background : #96bd49;
+	border-radius:10px;
+}
