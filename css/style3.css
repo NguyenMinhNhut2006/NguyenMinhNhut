@@ -1,0 +1,38 @@
+﻿
+.container1{
+  background-image: linear-gradient(to right, #8360c3, #2ebf91);
+    margin: 100px;
+    padding : 50px;
+}
+#container2{
+    background-color: #404545;
+    margin: 1px;
+    padding : 1px;
+    border-radius: 1%;
+}
+.tieude{
+    text-align: center;
+    color:rgb(117, 211, 166);
+}
+
+.nhapthongtin{
+    padding-left: 70px;
+    color:rgb(119, 221, 183);
+}
+.bang{
+	
+	margin:auto;
+	border:none;
+	
+}
+input.use{
+background-color: #616363;
+}
+.bangtudo{
+    background-color: #616363;
+}
+input.nut{
+	cursor:pointer;
+	background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+	border-radius:10px;
+}

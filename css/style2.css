@@ -24,12 +24,14 @@ background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(137, 118, 166,
 body{
 	background-image: url("../assets/images/nen5.jpg");
 }
-table.bang{
-	margin:auto;
+.bang{
 	
+	margin:auto;
 	border:none;
+	
 }
-button{
+
+input.nut{
 	cursor:pointer;
 	background : #96bd49;
 	border-radius:10px;
