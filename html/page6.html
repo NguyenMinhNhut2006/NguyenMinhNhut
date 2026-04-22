@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang "vi">
+	<Head>
+		<meta charset="UTF-8">
+		<title> NguyenMinhNhut</title>
+		<link rel="stylesheet" href="../css/style4.css">
+		<script src="../js/lib4.js"></script>
+
+	<Head/>
+<body >
+	<div class="container">
+		<input type="button" onclick="them()" value="Ấn vào tôi để hiển thị thêm" >
+	</div>
+
+	<script>
+		function them(){
+			const myRow=document.createElement("div");
+			myRow.setAttribute("class","row");
+			const myText=document.createTextNode("nhập môn");
+			myRow.appendChild(myText)
+
+			const container = document.querySelector(".container");
+			container.appendChild(myRow);
+
+			
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang "vi">
+	<Head>
+		<meta charset="UTF-8">
+		<title> NguyenMinhNhut</title>
+		<link rel="stylesheet" href="../css/style4.css">
+		<script src="../js/lib4.js"></script>
+
+	<Head/>
+<body >
+	<form id="formInBCC">
+		<h2>In bảng cửu chương</h2>
+		<label for = "txtBCC">Nhập số từ 2 -> 9</label>
+		<input type = "number" id="txtBCC" min="2" max="9" class="so">
+		<button type="button" onclick="inbangcuuchuong()">In ra</button>
+		<div id="ketqua">
+		</div>
+	</form>
+
+	<script>
+		function inbangcuuchuong(){
+			const myForm = document.forms["formInBCC"];
+			const mynumber = myForm.elements[0];
+			let num = parseInt(mynumber.value);
+			let ketqua=" ";
+			if(num < 2 || num>9 ){
+				alert(" giá trị không hợp lệ");
+				
+			}
+			for(let i =1 ; i<=10 ; i++)
+			{
+				ketqua +=  num + "x" + i + "=" +(num*i)+ "<br>";
+
+			}
+
+			document.getElementById("ketqua").innerHTML = ketqua;
+		}
+	</script>
+
+</body>
+</html>
