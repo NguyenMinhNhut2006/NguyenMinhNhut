@@ -1,0 +1,103 @@
+﻿/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+/* Background */
+
+body{
+    background:#f0f4ff;
+}
+
+/* Khung */
+
+.container{
+
+    width:400px;
+
+    margin:40px auto;
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:10px;
+
+}
+
+/* Tiêu đề */
+
+h1{
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+}
+
+/* Input */
+
+input{
+
+    width:100%;
+
+    padding:10px;
+
+    margin-top:10px;
+
+}
+
+/* Button */
+
+button{
+
+    width:100%;
+
+    padding:10px;
+
+    margin-top:10px;
+
+    background:blue;
+
+    color:white;
+
+    border:none;
+
+    cursor:pointer;
+
+}
+
+/* Ẩn home */
+
+#home{
+    display:none;
+}
+
+/* Bảng */
+
+table{
+
+    width:100%;
+
+    margin-top:20px;
+
+    border-collapse:collapse;
+
+}
+
+/* Ô */
+
+th,
+td{
+
+    border:1px solid black;
+
+    padding:10px;
+
+    text-align:center;
+
+}

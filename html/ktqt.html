@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Web Chấm Công</title>
+
+    <!-- Kết nối CSS -->
+    <link rel="stylesheet" href="../css/stylektqt.css">
+
+</head>
+
+<body>
+
+<!-- LOGIN -->
+<div class="container" id="login">
+
+    <h1>Đăng Nhập</h1>
+
+    <!-- Nhập tài khoản -->
+    <input
+    type="text"
+    id="username"
+    placeholder="Tài khoản">
+
+    <!-- Nhập mật khẩu -->
+    <input
+    type="password"
+    id="password"
+    placeholder="Mật khẩu">
+
+    <!-- Nút đăng nhập -->
+    <button onclick="dangNhap()">
+
+        Đăng Nhập
+
+    </button>
+
+</div>
+
+<!-- HOME -->
+<div class="container" id="home">
+
+    <h1>Chấm Công</h1>
+
+    <!-- Nút check in -->
+    <button onclick="checkIn()">
+
+        Check In
+
+    </button>
+
+    <!-- Nút check out -->
+    <button onclick="checkOut()">
+
+        Check Out
+
+    </button>
+
+    <!-- Bảng -->
+    <table>
+
+        <tr>
+
+            <th>Họ tên</th>
+
+            <th>Giờ</th>
+
+            <th>Trạng thái</th>
+
+        </tr>
+
+        <!-- DOM thêm dữ liệu -->
+        <tbody id="tableBody">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script>
+
+/* ĐĂNG NHẬP */
+
+function dangNhap(){
+
+    let user =
+    document.getElementById("username").value;
+
+    let pass =
+    document.getElementById("password").value;
+
+    if(user == "nhut" && pass == "123"){
+
+        document.getElementById("login").style.display =
+        "none";
+
+        document.getElementById("home").style.display =
+        "block";
+
+    }
+
+    else{
+
+        alert("Sai tài khoản");
+
+    }
+
+}
+
+/* CHECK IN */
+
+function checkIn(){
+
+    let table =
+    document.getElementById("tableBody");
+
+    let row =
+    document.createElement("tr");
+
+    let time =
+    new Date().toLocaleTimeString();
+
+    row.innerHTML =
+
+    `
+    <td>Nguyễn Minh Nhựt</td>
+
+    <td>${time}</td>
+
+    <td>Check In</td>
+    `;
+
+    table.appendChild(row);
+
+}
+
+/* CHECK OUT */
+
+function checkOut(){
+
+    let table =
+    document.getElementById("tableBody");
+
+    let row =
+    document.createElement("tr");
+
+    let time =
+    new Date().toLocaleTimeString();
+
+    row.innerHTML =
+
+    `
+    <td>Nguyễn Minh Nhựt</td>
+
+    <td>${time}</td>
+
+    <td>Check Out</td>
+    `;
+
+    table.appendChild(row);
+
+}
+
+</script>
+
+</body>
+</html>
